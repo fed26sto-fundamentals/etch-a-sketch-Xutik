@@ -3,11 +3,11 @@
     width: 960px;
     height: 960px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .container > * {
     background-color: brown;
-    height: 20px;
-    width: 20px;
     border: 1px solid;
+    box-sizing: border-box;
 }

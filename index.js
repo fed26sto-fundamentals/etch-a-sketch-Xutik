@@ -1,11 +1,15 @@
-const max = Math.pow(4, 2)
-
+const n = 4;
+const max = Math.pow(n, 2)
+const size = 960;
 
 const table = document.querySelector('#table');
 
-// Add 16 divs
-for (let i = 1; i < 17; i++) {
-  const div = document.createElement('div');
-  table.appendChild(div);
+for (let i = 1; i < max + 1; i++) {
+  const h = 960 / n;
+  const w = 960 / n;
+  const childDiv = document.createElement('div');
+  childDiv.style.width = w + 'px';
+  childDiv.style.height = h + 'px';
+  table.appendChild(childDiv);
 }
 
