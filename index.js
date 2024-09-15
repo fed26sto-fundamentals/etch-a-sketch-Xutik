@@ -1,7 +1,11 @@
-const cdiv = document.querySelector('.container');
+const max = Math.pow(4, 2)
+
+
+const table = document.querySelector('#table');
 
 // Add 16 divs
-for (let i = 1; i < 257; i++) {
+for (let i = 1; i < 17; i++) {
   const div = document.createElement('div');
-  cdiv.appendChild(div);
+  table.appendChild(div);
 }
+
