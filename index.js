@@ -3,7 +3,7 @@ const size = 960;
 
 function createTable(){
   table.innerHTML = '';
-  
+
   const max = Math.pow(n, 2)
 
   for (let i = 1; i < max + 1; i++) {
@@ -14,9 +14,6 @@ function createTable(){
     childDiv.style.height = h + 'px';
     childDiv.addEventListener('mouseover', () => {
       childDiv.style.backgroundColor = 'green'
-    })
-    childDiv.addEventListener('mouseleave', () => {
-      childDiv.style.backgroundColor = 'brown'
     })
   
     table.appendChild(childDiv);
